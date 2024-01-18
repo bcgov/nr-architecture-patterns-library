@@ -48,3 +48,5 @@ jobs:
           git commit -m "Adding or updating the confluence pages" || echo "No changes to commit"
           git push origin update/confluence-content
           gh pr create --assignee "mishraomp" --base main --title "Updated content from confluence." --body "Updated content from confluence."
+        env:
+          GH_TOKEN: ${{ github.token }}
