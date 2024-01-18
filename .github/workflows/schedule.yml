@@ -49,4 +49,4 @@ jobs:
           git push origin update/confluence-content
           gh pr create --assignee "mishraomp" --base main --title "Updated content from confluence." --body "Updated content from confluence."
         env:
-          GH_TOKEN: ${{ github.token }}
+          GH_TOKEN: ${{ secrets.PAT_GHA }}
