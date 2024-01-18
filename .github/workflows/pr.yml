@@ -1,0 +1,72 @@
+name: Deploy to OpenShift on PR
+on:
+  pull_request:
+    branches:
+      - main
+jobs:
+  pr-description-add:
+    name: PR Description Add
+    runs-on: ubuntu-22.04
+    permissions:
+      pull-requests: write
+    timeout-minutes: 1
+    steps:
+      - uses: bcgov-nr/action-pr-description-add@v1.1.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          add_markdown: |
+            ---
+            Thanks for the PR!
+
+            Deployments, as required, will be available below:
+            - [Frontend](https://${{ github.event.repository.name }}-${{ github.event.number }}.apps.silver.devops.gov.bc.ca)
+
+  builds:
+    name: Builds
+    runs-on: ubuntu-22.04
+    permissions:
+      packages: write
+    strategy:
+      matrix:
+        package: [frontend]
+        include:
+          - package: frontend
+            triggers: ('patterns/')
+            build_file: ./patterns/Dockerfile
+            build_context: ./patterns
+
+    steps:
+      - uses: actions/checkout@v4
+      - uses: bcgov-nr/action-builder-ghcr@v2.0.1
+        with:
+          package: ${{ matrix.package }}
+          tag: pr-${{ github.event.number }}
+          tag_fallback: test
+          token: ${{ secrets.GITHUB_TOKEN }}
+          triggers: ${{ matrix.triggers }}
+          build_context: ${{ matrix.build_context }}
+          build_file: ${{ matrix.build_file }}
+  deploys:
+    name: Deploys
+    needs: [builds]
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+        name: Checkout
+      - name: Deploy to OpenShift
+        shell: bash
+        run: |
+          # Allow pipefail, since we could be catching oc create errors
+          set +o pipefail
+    
+          # Login to OpenShift (NOTE: project command is a safeguard)
+          oc login --token=${{ secrets.oc_token }} --server=${{ vars.oc_server }}
+          oc project ${{ vars.oc_namespace }}
+          helm uninstall ${{ github.event.repository.name }}-${{ github.event.number }} || true
+          # Deploy Helm Chart
+          cd charts/${{ github.event.repository.name }}
+          helm dependency update
+          helm upgrade --install --wait --atomic  ${{ github.event.repository.name }}-${{ github.event.number }}  \
+          --set-string global.tag="pr-${{ github.event.number }}"  \
+          --set-string global.repository="${{ github.repository }}"  \
+          -f values.yaml --timeout 5m  .

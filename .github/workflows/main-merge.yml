@@ -1,0 +1,36 @@
+name: Deploy to GitHub Pages on push to main
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+    build-deploy:
+      name: Build and Deploy Docusaurus to GitHub Pages
+      runs-on: ubuntu-22.04
+      defaults:
+        run:
+          working-directory: ./patterns
+      
+      steps:
+        - uses: actions/checkout@v4
+        - uses: actions/setup-node@v4
+          with:
+            node-version: 20
+            cache: npm
+            cache-dependency-path: patterns/package-lock.json
+
+        - name: Install dependencies
+          run:  npm ci --ignore-scripts
+        - name: Build website
+          run: |
+            export BASE_URL="/nr-architecture-patterns-library" && npm run build
+
+        # Popular action to deploy to GitHub Pages:
+        # Docs: https://github.com/peaceiris/actions-gh-pages#%EF%B8%8F-docusaurus
+        - name: Deploy to GitHub Pages
+          uses: peaceiris/actions-gh-pages@v3
+          with:
+            github_token: ${{ secrets.GITHUB_TOKEN }}
+            # Build output to publish to the `gh-pages` branch:
+            publish_dir: ./patterns/build

@@ -1,0 +1,24 @@
+name: Pull Request Closed
+
+on:
+  pull_request:
+    types:
+      - closed
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  # Clean up OpenShift when PR closed, no conditions
+  cleanup-openshift:
+    name: Cleanup OpenShift
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Remove OpenShift artifacts
+        run: |
+          oc login --token=${{ secrets.OC_TOKEN }} --server=${{ vars.OC_SERVER }}
+          oc project ${{ vars.OC_NAMESPACE }}
+
+          # Remove old build runs, build pods and deployment pods
+          helm uninstall ${{ github.event.repository.name }}-${{ github.event.number }}
