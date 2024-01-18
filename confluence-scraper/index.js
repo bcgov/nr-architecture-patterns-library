@@ -1,16 +1,15 @@
 'use strict'
-import {setOutput} from '@actions/core'
-const fs = require('fs');
-const fs_promises = require('fs').promises;
-const TurndownService = require('turndown');
+import { setOutput } from '@actions/core';
+import fs from 'fs';
+import { promises as fs_promises } from 'fs';
+import TurndownService from 'turndown';
+import http from 'https';
+import axios from 'axios';
 const turndownService = new TurndownService();
 
-const http = require('https');
 const server = http.createServer();
 server.listen(3002); // just to make the process does not exit.
-const axios = require('axios').default;
 const BASE_URL = process.env.BASE_URL;
-console.log(BASE_URL);
 const PAGE_ID_LIST = process.env.PAGES?.split(','); // expected to be comma separated page ids.
 async function processPageIdList() {
   const options = {
@@ -20,6 +19,7 @@ async function processPageIdList() {
     }
   };
   let i=1;
+  let isUpdated = false;
   for (const page_id of PAGE_ID_LIST) {
     try {
       const sideBar = `---\nsidebar_position: ${i++}\n---\n`;
@@ -32,23 +32,27 @@ async function processPageIdList() {
           await fs_promises.writeFile(filePath, JSON.stringify(response?.data));
           const markdown=turndownService.turndown(response?.data?.body?.storage?.value);
           await fs_promises.writeFile(folderPath + `/${response.data.title}.md`, sideBar+markdown);
-          setOutput('updated', true);
+          if(!isUpdated){
+            isUpdated = true;
+          }
         }else{
           console.info('It is already the latest version', page_id);
-          setOutput('updated', false);
         }
       } else {
         fs.mkdirSync(folderPath, { recursive: true });
         await fs_promises.writeFile(filePath, JSON.stringify(response?.data));
         const markdown=turndownService.turndown(response?.data?.body?.storage?.value);
         await fs_promises.writeFile(folderPath + `/${response.data.title}.md`, sideBar+markdown);
-        setOutput('updated', true);
+        if(!isUpdated){
+          isUpdated = true;
+        }
       }
     } catch (err) {
       console.error(err);
       process.exit(1);
     }
   }
+  setOutput('updated', isUpdated);
 }
 
 processPageIdList().then(() => {
