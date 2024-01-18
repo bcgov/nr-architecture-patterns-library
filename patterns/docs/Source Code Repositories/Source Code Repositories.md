@@ -1,68 +1,43 @@
 ---
 sidebar_position: 2
 ---
-Status
-
-GreenDocument
-
-Stakeholders
-
-Description
-
-General guidance and recommendations for source code repositories
-
-Outcome
-
-  
-
-Owner
-
-IITD Architecture
+<table class="wrapped"><colgroup class=""></colgroup><tbody class=""><tr class=""><th>Status</th><td><div class="content-wrapper"><p>Document</p></div></td></tr><tr class=""><th>Stakeholders</th><td>NRIDS Architecture</td></tr><tr class=""><th>Description</th><td>General guidance and recommendations for source code repositories</td></tr><tr class=""><th>Owner</th><td>NRIDS (Architecture)</td></tr></tbody></table>
 
 ### Source Code Repository Types
 
+| 
 Repository Type
+
+ | 
 
 When to Use
 
+ | 
+
 Key Contacts
+
+ | 
 
 Notes
 
-Subversion
+ |
+| --- | --- | --- | --- |
+| Subversion | Never |  | Subversion is deprecated, do not create any new repositories. |
+| BitBucket | Closed, internal |  | Manual, complex, (currently) in-house. Works with RFC/RFD process and JIRA. Very customizable. |
+| Github | Whenever possible |  | 
 
-Never
-
-  
-
-Subversion is deprecated, do not create any new repositories.
-
-BitBucket
-
-Closed, internal
-
-  
-
-Manual, complex, (currently) in-house.  Works with RFC/RFD process and JIRA.  Very customizable.
-
-Github
-
-Whenever possible
-
-  
-
-Ideal for automation, open source.  Industry leader in most significant areas.  Very unconstrained. 
+Ideal for automation, open source. Industry leader in most significant areas. Very unconstrained.
 
 see [https://github.com/bcgov/BC-Policy-Framework-For-GitHub](https://github.com/bcgov/BC-Policy-Framework-For-GitHub)
 
-  
+ |
 
 **GitHub**:
 
 *   Predominant SCM system used in BC Government
 *   Free code repositories for open source projects
 *   Free GitHub Actions for open source projects
-*   Marketplace provides an incredible amount of [technologies and services](https://github.com/marketplace)
+*   Marketplace provides an incredible amount of[technologies and services](https://github.com/marketplace)
 *   Free container registry (\*within GitHub Actions)
     *   Images can be consumed by OpenShift/Kubernetes, AWS, Azure, Podman/Docker and more
 *   Biggest code repository system
@@ -80,8 +55,6 @@ see [https://github.com/bcgov/BC-Policy-Framework-For-GitHub](https://github.com
 
 For practices on using GitHub see:
 
-  
-
 **BitBucket**:
 
 *   JIRA integration
@@ -91,8 +64,6 @@ For practices on using GitHub see:
     *   Asphyxiate contractors with red tape until code is abandoned and/or overwritten
 *   Currently on-premise, working Jenkins and minimal firewall/networking changes
 *   Potential shift to cloud will require similar admin and network changes to GitHub
-
-  
 
 **Subversion (SVN)**:
 
@@ -106,7 +77,7 @@ For practices on using GitHub see:
 
 ### Diagrams
 
-*   All repositories should have a .diagrams folder in the root of the repo. This folder should have at least:  
+*   All repositories should have a .diagrams folder in the root of the repo. This folder should have at least:
     *   1x application architecture diagram in the source file format .drawio.xml
     *   1x system integration and data flow diagram in the source file format .drawio.xml
     *   1x architecture diagram in the file format .png for each .drawio.xml diagram
