@@ -1,32 +1,14 @@
 ---
 sidebar_position: 3
 ---
-Status
-
-Document
-
-Stakeholders
-
-NRIDS Architecture, Development & Digital Services, NRM Product Teams
-
-Description
-
-The purpose of this page is to outline practices when using GitHub as your source code repository
-
-Outcome
-
-Consistent point of reference for onboarding new product teams into the NRM's.
-
-Owner
-
-NRIDS (DDS, Architecture)
+<table class="wrapped"><colgroup></colgroup><tbody><tr><th>Status</th><td><div class="content-wrapper"><p>Document</p></div></td></tr><tr><th>Stakeholders</th><td>NRIDS Architecture, Development &amp; Digital Services, NRM Product Teams</td></tr><tr><th>Description</th><td>The purpose of this page is to outline practices when using GitHub as your source code repository</td></tr><tr><th>Outcome</th><td>Consistent point of reference for onboarding new product teams into the NRM's.</td></tr><tr><th>Owner</th><td>NRIDS (DDS, Architecture)</td></tr></tbody></table>
 
 Repository Setup
-================
+----------------
 
 The below options are found under settings
 
-**Branch Protection**
+### **Branch Protection**
 
 Create at least 1 branch protection rule for your "main" branch that;
 
@@ -35,7 +17,7 @@ Create at least 1 branch protection rule for your "main" branch that;
 
 Note: Admins can bypass this
 
-*   Enforces status checks to be passed before merging, this should include;  
+*   Enforces status checks to be passed before merging, this should include;
     *   SonarCloud (vulnerability, code coverage)
     *   Code scanning (Trivy, Snyk, CodeQL)
     *   Builds
@@ -47,17 +29,17 @@ Note: Admins can bypass this
 
 *   Ensures branches are up to date before merging
 
-**Manage Your Administrators**
+### **Manage Your Administrators**
 
 *   Have at least 1 backup administrator
 *   Have as few admins as possible, most developers will not need to be an admin
 
-**Manage Your Team**
+### **Manage Your Team**
 
 *   Create a Team in GitHub and Manage the permission in the team. ([https://github.com/orgs/bcgov/teams](https://github.com/orgs/bcgov/teams))
 *   This way if the single team is working on multiple products, authorization will be easier to manage and tracking will be easier.
 
-**Setup Your Pull Request Repository Settings (Very Useful to Help Ensure Guidelines are Followed)**
+### **Setup Your Pull Request Repository Settings (Very Useful to Help Ensure Guidelines are Followed)**
 
 *   Use squash merging to keep histories clean
     *   We recommend using pull request titles
@@ -70,7 +52,7 @@ Note: Admins can bypass this
 
 For additional PR, Pipeline, and Deployment practices: See
 
-**Create Repository Documentation**
+### **Create Repository Documentation**
 
 *   Create a meaningful Readme.md, see [https://github.com/bcgov/BC-Policy-Framework-For-GitHub/blob/master/BC-Gov-Org-HowTo/SAMPLE-README.md](https://github.com/bcgov/BC-Policy-Framework-For-GitHub/blob/master/BC-Gov-Org-HowTo/SAMPLE-README.md)
 *   Add a license and other required documentation, see [https://docs.developer.gov.bc.ca/required-pages-for-github-repository/](https://docs.developer.gov.bc.ca/required-pages-for-github-repository/)
@@ -79,7 +61,7 @@ For additional PR, Pipeline, and Deployment practices: See
     *   If you're going to use the Wiki make sure you add a reference to it in your Readme.md
 *   Create a reference in confluence to your repository and documentation
 
-**GitHub Wiki - Suggestions of What to Add**
+### **GitHub Wiki - Suggestions of What to Add**
 
 *   Points of Contact
 *   How-To's:
@@ -87,9 +69,9 @@ For additional PR, Pipeline, and Deployment practices: See
     *   Developer Practices
     *   Coding Practices
     *   Ticket management
-    *   Backup and restore 
+    *   Backup and restore
 *   Application process flows
 
-**Handle Your Secrets and Environment Variables**
+### **Handle Your Secrets and Environment Variables**
 
 See
