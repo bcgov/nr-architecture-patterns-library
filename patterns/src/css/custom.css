@@ -28,3 +28,14 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+.navbar {
+  background-color: #003366 !important;
+  border-bottom: 2px solid rgb(252, 186, 25) !important;
+}
+.footer {
+  background-color: #003366 !important;
+  
+}
+.footer__copyright {
+  color: #fff !important;
+}

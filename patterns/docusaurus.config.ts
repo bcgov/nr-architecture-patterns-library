@@ -51,12 +51,13 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
-    image: "img/gov-bc-logo-horiz.png",
+    image: "img/bc-gov-logo.svg",
     navbar: {
+      style:"primary",
       title: "NRM Architecture Patterns Library",
       logo: {
         alt: "BCGov Logo",
-        src: "img/gov-bc-logo-horiz.png",
+        src: "img/bc-gov-logo.svg",
       },
       items: [
         {
@@ -72,22 +73,7 @@ const config: Config = {
       ],
     },
     footer: {
-      style: "dark",
-      links: [
-        {
-          title: "Community",
-          items: [
-            {
-              label: "Stack Overflow",
-              href: "https://stackoverflow.developer.gov.bc.ca/",
-            },
-            {
-              label: "Rocket.Chat",
-              href: "https://chat.developer.gov.bc.ca/",
-            },
-          ],
-        },
-      ],
+      style: "light",
       copyright: `Copyright © ${new Date().getFullYear()} BCGov. Built with Docusaurus.`,
     },
     prism: {
