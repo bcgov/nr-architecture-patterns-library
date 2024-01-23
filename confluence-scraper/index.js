@@ -76,6 +76,7 @@ async function processChildPages(folderPath, page_id) {
       const updatedHtml = formatHTMLWithCheerio(html);
       const markdown = turndownService.turndown(updatedHtml);
       const isUpdated = await processAPIResponse(filePath, childPage, false, false, childPage.id, `${folderPath}/${childPage.title}`, childPage.title, sideBar, markdown);
+      console.log(`isUpdated: ${isUpdated} for child page ${page_id}`);
       if(!childPagesUpdated && isUpdated) {
         childPagesUpdated = isUpdated;
       }
@@ -117,10 +118,15 @@ async function processPageIdList() {
           process.exit(1);
         }
         const markdown = turndownService.turndown(formattedHtml);
-        isUpdated = await processAPIResponse(filePath, response.data, isUpdated, updateIndividually, page_id, folderPath, pageTitle, sideBar, markdown);
+        const parentPageUpdated = await processAPIResponse(filePath, response.data, isUpdated, updateIndividually, page_id, folderPath, pageTitle, sideBar, markdown);
+        console.log(`isUpdated: ${parentPageUpdated} for ${page_id}`);
+        if(!isUpdated && parentPageUpdated) { // update to true only once.
+          isUpdated = true;
+        }
         const isChildPagesUpdated = await processChildPages(folderPath, page_id);
+        console.log(`isChildPagesUpdated: ${isChildPagesUpdated} for parent page ${page_id}`);
         if(!isUpdated && isChildPagesUpdated) {
-          isUpdated = isChildPagesUpdated;
+          isUpdated = true;
         }
 
       });
