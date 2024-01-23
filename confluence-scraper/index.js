@@ -103,7 +103,7 @@ async function processPageIdList() {
       const filePath = `${folderPath}/data.json`;
       const html = response?.data?.body?.storage?.value;
       const updatedHtml = formatHTMLWithCheerio(html);
-      tidy(updatedHtml,  {
+      await tidy(updatedHtml,  {
         indent: true,
         bare: true,
         breakBeforeBr: true,
@@ -136,13 +136,13 @@ async function processPageIdList() {
       process.exit(1);
     }
   }
-  setOutput('updated', isUpdated);
+  setTimeout(() => {
+    setOutput('updated', isUpdated);
+    process.exit(0);
+  },5000);
 }
 
-processPageIdList().then(() => {
-  console.info('process completed.');
-  process.exit(0);
-}).catch(err => {
+processPageIdList().catch(err => {
   console.error(err);
   process.exit(1);
 });
