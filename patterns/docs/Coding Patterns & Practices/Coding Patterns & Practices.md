@@ -64,6 +64,8 @@ Focus on the scale-out vs scale-up as deployments are into containers or serverl
 
 ### Pipeline
 
+Align your CI/CD pipeline with your hosting environment (GitHub Actions for Openshift Silver/Gold, GitHub Actions with ArgoCD for Openshift Emerald, GiHub Actions with Terraform for AWS)
+
 *   Understand your DevOps pipeline (eg. What happens when I create a PR, merge a PR, how an image gets built, how code get tested)
 *   Maintain your pipeline and align if possible to common practice (eg. [https://github.com/bcgov/quickstart-openshift](https://github.com/bcgov/quickstart-openshift))
 

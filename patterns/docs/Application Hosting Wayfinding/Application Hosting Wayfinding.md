@@ -1,24 +1,12 @@
 ---
 sidebar_position: 5
 ---
-Status
-
-YellowEvolving 
-
-Description
-
-Overview of application hosting options
-
-Owner
-
-NRIDS Architecture
+<table class="wrapped"><colgroup></colgroup><tbody><tr><th>Status</th><td><div class="content-wrapper"><p>YellowEvolving</p></div></td></tr><tr><th>Description</th><td><div class="content-wrapper"><p>Overview of application hosting options</p></div></td></tr><tr><th>Owner</th><td>NRIDS Architecture</td></tr></tbody></table>
 
 Overview
 ========
 
 This page is intended to provide a high level overview of running an application in various environments and provide a basic understanding of the differences between application hosting environments. Please ask a member of our team to review this with you if you are discussing hosting options.
-
-  
 
 Hosting Options
 ===============
@@ -36,44 +24,7 @@ Please not the below is not a representation about a specific application but a 
 
 trueOnPremfalse400autotoptrue16563
 
-Pros
-
-Cons
-
-Network access to government services and applications within SPAN
-
-*   In general, firewall rules will be the only blocker but can be mitigated in general via a firewall change request; 
-
-Difficult to deploy
-
-*   Must use Jenkins or manual deployments
-*   No native connectivity to connect with github actions
-*   locked into relying on the RFD / RFC team and their deployment structure
-
-Network access from government services and applications within SPAN
-
-*   In general, firewall rules will be the only blocker but can be changes via a firewall change request; **Note this can be useful when another systems require access to your applications data**
-
-Limited control over servers
-
-*   By default a team does not have full control of their servers
-*   Security patches are managed external to a team
-
-Access to system databases
-
-*   Applications that do not have internal or external accessible APIs are still accessible via direct database connections; **Note this can be useful for integrations with systems that are not under active development or do not have capabilities to develop APIs**
-
-Limited Tech Stack
-
-*   Currently, it is limited to Java/Oracle mainly within ISSS stack with BitBucket as the source code repository.
-
-Access to internal APIs
-
-*   Applications that do not have external accessible APIs are still accessible via internal APIs
-
-Limited Scalability
-
-*   Currently, all applications run as a single process without any resiliency or failover.
+<table class="relative-table wrapped"><colgroup></colgroup><tbody><tr><th>Pros</th><th>Cons</th></tr><tr><td><p>Network access to government services and applications within SPAN</p><ul><li>In general, firewall rules will be the only blocker but can be mitigated in general via a firewall change request;</li></ul></td><td><p>Difficult to deploy</p><ul><li>Must use Jenkins or manual deployments</li><li>No native connectivity to connect with github actions</li><li>locked into relying on the RFD / RFC team and their deployment structure</li></ul></td></tr><tr><td colspan="1"><p>Network access from government services and applications within SPAN</p><ul><li>In general, firewall rules will be the only blocker but can be changes via a firewall change request; <strong>Note this can be useful when another systems require access to your applications data</strong></li></ul></td><td colspan="1"><p>Limited control over servers</p><ul><li>By default a team does not have full control of their servers</li><li>Security patches are managed external to a team</li></ul></td></tr><tr><td><p>Access to system databases</p><ul><li>Applications that do not have internal or external accessible APIs are still accessible via direct database connections; <strong>Note this can be useful for integrations with systems that are not under active development or do not have capabilities to develop APIs</strong></li></ul></td><td><p>Limited Tech Stack</p><ul><li>Currently, it is limited to Java/Oracle mainly within ISSS stack with BitBucket as the source code repository.</li></ul></td></tr><tr><td><p>Access to internal APIs</p><ul><li>Applications that do not have external accessible APIs are still accessible via internal APIs</li></ul></td><td><p>Limited Scalability</p><ul><li>Currently, all applications run as a single process without any resiliency or failover.</li></ul></td></tr></tbody></table>
 
 **When this might fit?**
 
@@ -85,8 +36,6 @@ Limited Scalability
 1.  Team requires full control over the deployment, patches, and maintenance of applications and associated servers.
 2.  Team requiring separate tech stack(frontend, backend, database, messaging ...)
 
-  
-
 Openshift
 ---------
 
@@ -94,32 +43,7 @@ Openshift
 
 Please note the below is not a representation about a specific application but a representation of what could be.
 
-  
-
-Pros
-
-Cons
-
-Control over deployment, patches, updates,
-
-*   Can work with GitHub and GitHub actions; **Note this is not platform/cluster updates. Platform updates are still done by OCIO but if your application is configured as Highly-available with appropriate state management this should not affect your application**
-
-Database stability
-
-*   Running a single pod can cause your database to go down without notice in a production environment
-*   Limited or no DBA support; the development team is ultimately responsible for database management and backup/recovery
-
-Supporting GitHub
-
-*   Open Source Codebase leading to Easier Collaboration and following defacto standard.
-
-Database cluster complexity
-
-*   Since production databases must operate in a cluster, additional expertise is needed to operate a cluster
-
-  
-
-  
+<table class="relative-table wrapped"><colgroup></colgroup><tbody><tr><th>Pros</th><th>Cons</th></tr><tr><td><p>Control over deployment, patches, updates,</p><ul><li>Can work with GitHub and GitHub actions; <strong>Note this is not platform/cluster updates. Platform updates are still done by OCIO but if your application is configured as Highly-available with appropriate state management this should not affect your application</strong></li></ul></td><td><p>Database stability</p><ul><li>Running a single pod can cause your database to go down without notice in a production environment</li><li>Limited or no DBA support; the development team is ultimately responsible for database management and backup/recovery</li></ul></td></tr><tr><td><p>Supporting GitHub</p><ul><li>Open Source Codebase leading to Easier Collaboration and following defacto standard.</li></ul></td><td><p>Database cluster complexity</p><ul><li>Since production databases must operate in a cluster, additional expertise is needed to operate a cluster</li></ul></td></tr><tr><td></td><td></td></tr></tbody></table>
 
 **When this might fit?**
 
@@ -142,33 +66,7 @@ Please not the below is not a representation about a specific application but a 
 
 trueAWSfalse600autotoptrue34981
 
-Pros
-
-Cons
-
-Scalability of resources
-
-*   Provides the ability to increase resources (for a cost)
-
-Steep learning curve
-
-*   Operating in AWS requires extensive knowledge of the platform and infrastructure as well as supporting technologies (eg. Terraform)
-
-Reduced IT management overhead
-
-*   Platform, infrastructure, security overhead are handled by AWS
-
-Limited use for Data Types
-
-*   Not fit for Protected C data
-
-Access to a breadth of services not available on premise
-
-*   [https://digital.gov.bc.ca/cloud/public/providers/service-catalogue/](https://digital.gov.bc.ca/cloud/public/providers/service-catalogue/)
-
-Little or no cost certainty
-
-*   Most components in AWS are billed based on usage; network egress (leaving AWS) is also charged based on data volumes
+<table class="relative-table wrapped"><colgroup></colgroup><tbody><tr><th>Pros</th><th>Cons</th></tr><tr><td><p>Scalability of resources</p><ul><li>Provides the ability to increase resources (for a cost)</li></ul></td><td><p>Steep learning curve</p><ul><li>Operating in AWS requires extensive knowledge of the platform and infrastructure as well as supporting technologies (eg. Terraform)</li></ul></td></tr><tr><td><p>Reduced IT management overhead</p><ul><li>Platform, infrastructure, security overhead are handled by AWS</li></ul></td><td><p>Limited use for Data Types</p><ul><li>Not fit for Protected C data</li></ul></td></tr><tr><td><p>Access to a breadth of services not available on premise</p><ul><li><a href="https://digital.gov.bc.ca/cloud/public/providers/service-catalogue/">https://digital.gov.bc.ca/cloud/public/providers/service-catalogue/</a></li></ul></td><td><p>Little or no cost certainty</p><ul><li>Most components in AWS are billed based on usage; network egress (leaving AWS) is also charged based on data volumes</li></ul></td></tr></tbody></table>
 
 **When this might fit?**
 
@@ -192,37 +90,7 @@ Blue Line: SPAN network boarder
 
 trueSaaSfalse400autotoptrue26291
 
-Pros
-
-Cons
-
-Less responsibility to maintain
-
-*   A vendor is responsible to maintain infrastructure and application; **Note SLAs. contracts, and licenses are required**
-
-Vendor Managed
-
-*   Infrastructure or application issues will generally be up to the vendor to resolve
-*   Changes, bugs, enhancements are likely to be done only by a vendor unless additional training is provided
-
-  
-
-Vendor and Product lock in
-
-*   Full implement SaaS products generally requires substantial effort to migrate to other platforms
-*   **Data** is locked in with the vendor.
-
-  
-
-Limited use for Data Types
-
-*   Not fit for Protected C data
-
-  
-
-Difficult to meet requirements of the Cloud Security Schedule and Cloud Privacy Schedule
-
-*   Each SaaS vendor AND the underlying service provider must be evaluated
+<table class="relative-table wrapped"><colgroup></colgroup><tbody><tr><th>Pros</th><th>Cons</th></tr><tr><td><p>Less responsibility to maintain</p><ul><li>A vendor is responsible to maintain infrastructure and application; <strong>Note SLAs. contracts, and licenses are required</strong></li></ul></td><td><p>Vendor Managed</p><ul><li>Infrastructure or application issues will generally be up to the vendor to resolve</li><li>Changes, bugs, enhancements are likely to be done only by a vendor unless additional training is provided</li></ul></td></tr><tr><td></td><td><p>Vendor and Product lock in</p><ul><li>Full implement SaaS products generally requires substantial effort to migrate to other platforms</li><li><u><strong>Data</strong></u> is locked in with the vendor.</li></ul></td></tr><tr><td></td><td><p>Limited use for Data Types</p><ul><li>Not fit for Protected C data</li></ul></td></tr><tr><td colspan="1"></td><td colspan="1"><p>Difficult to meet requirements of the Cloud Security Schedule and Cloud Privacy Schedule</p><ul><li>Each SaaS vendor AND the underlying service provider must be evaluated</li></ul></td></tr></tbody></table>
 
 **When this might fit?**
 
