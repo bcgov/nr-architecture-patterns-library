@@ -104,7 +104,7 @@ It is strongly recommended that code be submitted using a Pull Request. Automate
 
 NRM has a modern CI/CD template using GitHub Actions and HELM: [OpenShift QuickStart](https://github.com/bcgov/quickstart-openshift) targeted for OpenShift Silver or Gold Cluster.
 
-NRM has a modern CI/CD template using GitHub Actions, HELM and Argo: [OpenShift QuickStart Emerald](https://github.com/bcgov/quickstart-openshift) targeted for OpenShift Emerald Cluster.
+NRM has a modern CI/CD template using GitHub Actions, HELM and Argo: [OpenShift QuickStart Emerald](https://github.com/bcgov/quickstart-openshift-emerald) targeted for OpenShift Emerald Cluster.
 
 ### Application Programming Interfaces (API's)
 
