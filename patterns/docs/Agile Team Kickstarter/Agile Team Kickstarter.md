@@ -52,6 +52,8 @@ Our friends and collaborators in the Forestry Suite of Applications Modernizatio
 
 [QuickStart OpenShift](https://github.com/bcgov/quickstart-openshift)
 
+[QuickStart OpenShift Emerald](https://github.com/bcgov/quickstart-openshift-emerald)
+
 ### Public Cloud
 
 BC Government has endorsed several public cloud services and provides quickstart guides and sample applications!
@@ -100,7 +102,9 @@ The deployment pipeline is a key component for your application. For visibility,
 
 It is strongly recommended that code be submitted using a Pull Request. Automated testing can and should replace manual UAT wherever practical.
 
-NRM has a modern CI/CD template using GitHub Actions: [OpenShift QuickStart](https://github.com/bcgov/quickstart-openshift) . This offering is currently limited OpenShift Silver or Gold Cluster.
+NRM has a modern CI/CD template using GitHub Actions and HELM: [OpenShift QuickStart](https://github.com/bcgov/quickstart-openshift) targeted for OpenShift Silver or Gold Cluster.
+
+NRM has a modern CI/CD template using GitHub Actions, HELM and Argo: [OpenShift QuickStart Emerald](https://github.com/bcgov/quickstart-openshift) targeted for OpenShift Emerald Cluster.
 
 ### Application Programming Interfaces (API's)
 
@@ -195,7 +199,7 @@ NRM Specific Guidance: [Common Components and Common Services](https://apps.nrs.
 
 Many teams require reporting and analytics capabilities for their application data. Metabase is an easy-to-use open-source dashboarding and business intelligence tool that has broad usage in the NRM. Architecture has created a packaged install of Metabase tailored to teams wanting secure access to Zone B Oracle databases.
 
-[https://github.com/bcgov/nr-arch-templates/tree/main/Metabase](https://github.com/bcgov/nr-arch-templates/tree/main/Metabase)
+[Metabase](https://github.com/bcgov/nr-metabase)
 
 ### I need help from the Community!
 
