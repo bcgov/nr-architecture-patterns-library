@@ -48,7 +48,7 @@ Some of the more important concepts to understand up front are:
 
 ### OpenShift QuickStart Application
 
-Our friends and collaborators in the Forestry Suite of Applications Modernization Program and Architecture team have created an application template that includes pluggable API backends (Node/Nest, Python/FastAPI, Go/Fiber, Java/Quarkus) and frontend(React, Vite), with a deployment pipeline to the OpenShift platform with an option to include a PostgreSQL/PostGIS database and leveraging the backup container provided by the BC DevExchange. This is a great resource to get product teams up and running.
+Our friends and collaborators in Forestry Digital Services and the Architecture team have created an application template that includes pluggable API backends (Node/Nest, Python/FastAPI, Go/Fiber, Java/Quarkus) and frontend (React, Vite), with a deployment pipeline to the OpenShift platform with an option to include a PostgreSQL/PostGIS database and leveraging the backup container provided by the BC DevExchange. This is a great resource to get product teams up and running.
 
 [QuickStart OpenShift](https://github.com/bcgov/quickstart-openshift)
 
