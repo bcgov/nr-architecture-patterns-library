@@ -28,7 +28,7 @@ Costs
 
 *   NRIDS will proceed with a Github Teams License for the BCGOV-NR tenancy [https://github.com/bcgov-nr](https://github.com/bcgov-nr)
 *   NRIDS Architecture will continue to engage with OCIOs Platform Services team on their negotiations with Github Enterprise.
-*   Currently, February 2024, there are <30 participants in the tenancy and include developers, vendors and internal staff of Team Epsilon, 1Team, DBAs, Application Deliveries, AOT and CGI.
+*   Currently, February 2024, there are less than 30 participants in the tenancy and include developers, vendors and internal staff of Team Epsilon, 1Team, DBAs, Application Deliveries, AOT and CGI.
 *   [https://github.com/pricing](https://github.com/pricing)
 
 Components of Github Organization Administration
@@ -151,3 +151,7 @@ References
 ==========
 
 [https://stackify.com/managing-teams-github/](https://stackify.com/managing-teams-github/)
+
+[GitHub in BC Government - RC1.pdf](https://bcgov.sharepoint.com/:b:/t/03678/EYd__CQ_OflDiaukjBDrYp8BsnA5RXqqQEde9IVQR_qM8w?e=HjAJaY)
+
+[https://developer.gov.bc.ca/docs/default/component/bc-developer-guide/use-github-in-bcgov](https://developer.gov.bc.ca/docs/default/component/bc-developer-guide/use-github-in-bcgov/github-enterprise-user-licenses-bc-government/)
