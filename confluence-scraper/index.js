@@ -34,8 +34,13 @@ function formatHTMLWithCheerio(html) {
   $('span').replaceWith(function () {
     return $(this).contents();
   });
-  // remove all the styles from table elements
+  // remove all the styles from table and nested elements.
   $('table').removeAttr('style');
+  $('tr').removeAttr('style');
+  $('th').removeAttr('style');
+  $('td').removeAttr('style');
+  $('tbody').removeAttr('style');
+
 
   // Get the updated HTML
   return $.html();
