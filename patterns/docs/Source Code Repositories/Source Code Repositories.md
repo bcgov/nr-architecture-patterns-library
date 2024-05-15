@@ -5,32 +5,7 @@ sidebar_position: 2
 
 ### Source Code Repository Types
 
-| 
-Repository Type
-
- | 
-
-When to Use
-
- | 
-
-Key Contacts
-
- | 
-
-Notes
-
- |
-| --- | --- | --- | --- |
-| Subversion | Never |  | Subversion is deprecated, do not create any new repositories. |
-| BitBucket | Closed, internal |  | Manual, complex, (currently) in-house. Works with RFC/RFD process and JIRA. Very customizable. |
-| Github | Whenever possible |  | 
-
-Ideal for automation, open source. Industry leader in most significant areas. Very unconstrained.
-
-see [https://github.com/bcgov/BC-Policy-Framework-For-GitHub](https://github.com/bcgov/BC-Policy-Framework-For-GitHub)
-
- |
+<table><colgroup class=""></colgroup><tbody class=""><tr class=""><th style="text-align: left;"><p>Repository Type</p></th><th style="text-align: left;"><p>When to Use</p></th><th style="text-align: left;"><p>Key Contacts</p></th><th style="text-align: left;"><p>Notes</p></th></tr><tr class=""><td style="text-align: left;">Subversion</td><td style="text-align: left;">Never</td><td style="text-align: left;"></td><td style="text-align: left;">Subversion is deprecated, do not create any new repositories.</td></tr><tr class=""><td style="text-align: left;">BitBucket</td><td style="text-align: left;">Closed, internal</td><td style="text-align: left;"></td><td style="text-align: left;">Manual, complex, (currently) in-house. Works with RFC/RFD process and JIRA. Very customizable.</td></tr><tr class=""><td style="text-align: left;">Github</td><td style="text-align: left;">Whenever possible</td><td style="text-align: left;"></td><td style="text-align: left;"><p>Ideal for automation, open source. Industry leader in most significant areas. Very unconstrained.</p><p>see <a href="https://github.com/bcgov/BC-Policy-Framework-For-GitHub">https://github.com/bcgov/BC-Policy-Framework-For-GitHub</a></p></td></tr></tbody></table>
 
 **GitHub**:
 
