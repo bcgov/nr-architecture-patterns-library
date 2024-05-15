@@ -3,6 +3,12 @@ sidebar_position: 1
 ---
 <table class="wrapped"><colgroup></colgroup><tbody><tr><th>Status</th><td><div class="content-wrapper"><p>Document</p></div></td></tr><tr><th>Stakeholders</th><td>NRIDS Architecture, Development &amp; Digital Services, NRM Product Teams</td></tr><tr><th>Description</th><td>The purpose of this page is to outline practices when using GitHub as your source code repository</td></tr><tr><th>Outcome</th><td>Consistent point of reference for onboarding new product teams into the NRM's.</td></tr><tr><th>Owner</th><td>NRIDS (DDS, Architecture)</td></tr></tbody></table>
 
+### **Removing Sensitive Data from a GitHub Repo**
+
+**[https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository)**
+
+Please make sure to follow those instructions carefully, as simply deleting the content will not remove it completely from the repository commit history.
+
 Repository Setup
 ----------------
 
