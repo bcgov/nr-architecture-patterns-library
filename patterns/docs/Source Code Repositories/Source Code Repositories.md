@@ -5,32 +5,7 @@ sidebar_position: 2
 
 ### Source Code Repository Types
 
-| 
-Repository Type
-
- | 
-
-When to Use
-
- | 
-
-Key Contacts
-
- | 
-
-Notes
-
- |
-| --- | --- | --- | --- |
-| Subversion | Never |  | Subversion is deprecated, do not create any new repositories. |
-| BitBucket | Closed, internal |  | Manual, complex, (currently) in-house. Works with RFC/RFD process and JIRA. Very customizable. |
-| Github | Whenever possible |  | 
-
-Ideal for automation, open source. Industry leader in most significant areas. Very unconstrained.
-
-see [https://github.com/bcgov/BC-Policy-Framework-For-GitHub](https://github.com/bcgov/BC-Policy-Framework-For-GitHub)
-
- |
+<table><colgroup class=""></colgroup><tbody class=""><tr class=""><th><p>Repository Type</p></th><th><p>When to Use</p></th><th><p>Key Contacts</p></th><th><p>Notes</p></th></tr><tr class=""><td>Subversion</td><td>Never</td><td></td><td>Subversion is deprecated, do not create any new repositories.</td></tr><tr class=""><td>BitBucket</td><td>Closed, internal</td><td></td><td>Manual, complex, (currently) in-house. Works with RFC/RFD process and JIRA. Very customizable.</td></tr><tr class=""><td>Github</td><td>Whenever possible</td><td></td><td><p>Ideal for automation, open source. Industry leader in most significant areas. Very unconstrained.</p><p>see <a href="https://github.com/bcgov/BC-Policy-Framework-For-GitHub">https://github.com/bcgov/BC-Policy-Framework-For-GitHub</a></p></td></tr></tbody></table>
 
 **GitHub**:
 
