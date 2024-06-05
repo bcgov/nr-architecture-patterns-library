@@ -3,21 +3,24 @@ sidebar_position: 1
 ---
 This page has been replicated to a publicly accessible website located [here](https://bcgov.github.io/nr-architecture-patterns-library/docs/Agile%20Team%20Kickstarter)
 
-<table class="wrapped"><colgroup></colgroup><tbody><tr><th>Status</th><td><div class="content-wrapper"><p>Document</p></div></td></tr><tr><th>Stakeholders</th><td>NRIDS Architecture, Development &amp; Digital Services, NRM Product Teams</td></tr><tr><th>Description</th><td>The purpose of this page is to outline some of the key information and connections that product teams should be made aware of as part of team inception. This is a living and collaborative document.</td></tr><tr><th>Outcome</th><td>Consistent point of reference for onboarding new product teams into the NRM's.</td></tr><tr><th>Owner</th><td>NRIDS (DDS, Architecture)</td></tr></tbody></table>
+<table class="wrapped"><colgroup></colgroup><tbody><tr><th>Status</th><td><div class="content-wrapper"><p>GreenPublished</p></div></td></tr><tr><th>Overview</th><td><p>The purpose of this page is to outline some of the key information and connections that product teams should be made aware of as part of team inception. This is a living and collaborative document.</p><p>Teams can use this page a reference point to assist in locating some key areas of information related to their application. If the information you are using does not exist here please review other guideline pages and/or contact the architecture team.</p></td></tr></tbody></table>
 
-### Partnership Agreement
+Partnership Agreement
+=====================
 
 NRM teams that work within our Development and Digital Services (DDS) branch start with a partnership agreement to ensure alignment between NRIDS and the program area.
 
 [NRM Digital Service Delivery Partnership Agreement](https://apps.nrs.gov.bc.ca/int/confluence/display/DEVGUILD/NRM+Digital+Service+Delivery+Partnership+Agreement)
 
-### Team Agreement
+Team Agreement
+==============
 
 Before starting development, or when new team members begin contributing, ensure everyone on the team has the same understanding about coding practices, technology choices, and roles within your team. This is typically done during sprint 0.
 
 [Coding Patterns and Practices](https://apps.nrs.gov.bc.ca/int/confluence/display/AR/Coding+Patterns+and+Practices)
 
-### Product Lifecycle
+Product Lifecycle
+=================
 
 Is your team replacing, re-architecting or re-platforming an existing application? If so, it's the Product Owner's responsibility to ensure the existing application is retired and the data is transitioned or preserved to ensure data quality, accuracy and currency as well as overall portfolio sustainability. Product Owners may reach out to their assigned [Ministry Portfolio Manager (MPM)](https://apps.nrs.gov.bc.ca/int/confluence/display/AR/The+Architecture+Team#TheArchitectureTeam-MPMPortfolioAlignment) for assistance with the [Application Retirement](https://apps.nrs.gov.bc.ca/int/confluence/display/TS/Application+Retirement) process.
 
@@ -25,7 +28,8 @@ Ensure you allocate time and budget in your backlog to manage the overall lifecy
 
 Helpful links on Application Retirement:
 
-### Private Cloud
+Private Cloud
+=============
 
 The BC Government has invested heavily in the Red Hat OpenShift platform to provide self service private cloud capabilities. Training is available through the exchange lab to get teams acquainted with the platform; a good primer is [here](https://developer.gov.bc.ca/What-Is-OpenShift).
 
@@ -46,7 +50,8 @@ Some of the more important concepts to understand up front are:
 *   How to get deployments to listen to tags and/or configuration changes (eventually on repo events like pull requests)
 *   Tuning, health checks, resource allocation and tuning, and pod scaling
 
-### OpenShift QuickStart Application
+OpenShift QuickStart Application
+================================
 
 Our friends and collaborators in Forestry Digital Services and the Architecture team have created an application template that includes pluggable API backends (Node/Nest, Python/FastAPI, Go/Fiber, Java/Quarkus) and frontend (React, Vite), with a deployment pipeline to the OpenShift platform with an option to include a PostgreSQL/PostGIS database and leveraging the backup container provided by the BC DevExchange. This is a great resource to get product teams up and running.
 
@@ -54,7 +59,8 @@ Our friends and collaborators in Forestry Digital Services and the Architecture 
 
 [QuickStart OpenShift Emerald](https://github.com/bcgov/quickstart-openshift-emerald)
 
-### Public Cloud
+Public Cloud
+============
 
 BC Government has endorsed several public cloud services and provides quickstart guides and sample applications!
 
@@ -62,7 +68,8 @@ BC Government has endorsed several public cloud services and provides quickstart
 
 Approved AWS services can be found here: [https://developer.gov.bc.ca/AWS-Services](https://developer.gov.bc.ca/AWS-Services)
 
-### GitHub
+GitHub
+======
 
 Source code should be stored in a GitHub repository in the "bcgov" tenancy.
 
@@ -70,7 +77,8 @@ Access management for the bcgov GitHub tenancy can be found here: [https://just-
 
 NRM specific guidance on Github is here: [Source Code Repositories](https://apps.nrs.gov.bc.ca/int/confluence/display/AR/Source+Code+Repositories)
 
-### Authentication and Identity
+Authentication and Identity
+===========================
 
 Most NRM digital products leverage the OCIO SSO service that is backed by Keycloak.
 
@@ -78,7 +86,8 @@ Most NRM digital products leverage the OCIO SSO service that is backed by Keyclo
 
 [https://oidc.gov.bc.ca/auth/](https://oidc.gov.bc.ca/auth/)
 
-### Secrets Management
+Secrets Management
+==================
 
 The platform services team operates a Vault service.
 
@@ -86,7 +95,8 @@ It is described here: [https://beta-docs.developer.gov.bc.ca/vault-secrets-manag
 
 Access to the service is here: [https://vault.developer.gov.bc.ca/ui/vault/auth?with=token](https://vault.developer.gov.bc.ca/ui/vault/auth?with=token)
 
-### Security and Privacy
+Security and Privacy
+====================
 
 It's important that teams engage with the NRM Security and Privacy teams early and often. They can support you with general advice as well as Security Threat Risk Assessments (STRA's) and Privacy Impact Assessments (PIA's).
 
@@ -96,7 +106,8 @@ NRM Privacy Knowledge Base: [NRM Privacy Knowledge Base](https://apps.nrs.gov.bc
 
 OWASP (Open Web Application Security Project) is another great reference for security best practices for development teams: [https://owasp.org/www-project-secure-coding-practices-quick-reference-guide/migrated\_content](https://owasp.org/www-project-secure-coding-practices-quick-reference-guide/migrated_content)
 
-### CI/CD
+CI/CD
+=====
 
 The deployment pipeline is a key component for your application. For visibility, collaboration and maintainability modern teams are moving away from Jenkins towards GitHub actions.
 
@@ -106,7 +117,8 @@ NRM has a modern CI/CD template using GitHub Actions and HELM: [OpenShift QuickS
 
 NRM has a modern CI/CD template using GitHub Actions, HELM and Argo: [OpenShift QuickStart Emerald](https://github.com/bcgov/quickstart-openshift-emerald) targeted for OpenShift Emerald Cluster.
 
-### Application Programming Interfaces (API's)
+Application Programming Interfaces (API's)
+==========================================
 
 We recommend adopting an "API First" philosophy for application development, where teams both build and consume their API's. **Providing API specification with proper metadata is mandatory** irrespective of the underlying implementation(REST, graphql, grpc etc..)
 
@@ -122,7 +134,8 @@ BC Government has published a set of API Guidelines here: [https://developer.gov
 
 Information on the corporate API gateway can be found here: [https://bcgov.github.io/aps-infra-platform/](https://bcgov.github.io/aps-infra-platform/)
 
-### Database and Data Design
+Database and Data Design
+========================
 
 Most of the teams working on OpenShift are choosing a flavor of PostgreSQL to persist data for their application.
 
@@ -139,7 +152,8 @@ Database backups can be setup using the backup container image; information can 
 
 **Indigenous Languages:** the BC Government is committed to including [Indigenous languages in government records, systems and services](https://www2.gov.bc.ca/gov/content?id=666A1FD778FA437994E419A98662ED5C). The [BC Sans](https://www2.gov.bc.ca/gov/content/governments/services-for-government/policies-procedures/bc-visual-identity/bc-sans) font is an open-source "living" typeface developed for government to improve the readability and delivery of digital services. It was designed to support special characters and syllabics found in Indigenous Languages in B.C. When designing and building your product, ensure it has the ability to collect, store, manage and display BC Sans characters. Connect with your architects for more details and references.
 
-### Document Storage
+Document Storage
+================
 
 BC Government has an on premise [object storage solution](https://www.dell.com/en-ca/dt/storage/ecs/index.htm#tab0=0&tab1=0) that delivers low cost storage for unstructured and semi-structured data. The service is billed monthly to the highwatermark of the storage your team consumes in their S3 bucket at $0.07/GB/Month. To get an S3 object storage bucket, contact the [Optimize team](https://apps.nrs.gov.bc.ca/int/confluence/display/OPTIMIZE/NRS+Object+Storage).
 
@@ -147,7 +161,8 @@ BC Government has an on premise [object storage solution](https://www.dell.com/e
 
 An emerging companion to the Common Object Management Service being built by the Common Services team is [BCBox](https://bcbox.nrs.gov.bc.ca), which is a hosted solution that uses the COMS API to allow users to upload, tag and share files using any [OIDC](https://openid.net/connect/) compliant authentication mechanism. The code repository for BCBox can be found [here](https://github.com/bcgov/bcbox).
 
-### Design Guidance
+Design Guidance
+===============
 
 General resources for Agile designers at Digital Government (BC Visual Identity, Official BC Design System, Web Style Guide, Content Design Guidance, UX Research Guidance, Service Design Playbook) can be found here:
 
@@ -159,21 +174,25 @@ BC Parks has extended their Design Guide to include the use of the BC Sans font 
 
 [https://bcgov.github.io/bcparks/design-guides](https://bcgov.github.io/bcparks/design-guides)
 
-### Front End Frameworks
+Front End Frameworks
+====================
 
 Many agile teams are using a flavor of Javascript framework for their front end development (Angular, Vue, React etc). We recommend you pick the framework that works best for the team, and **_if you are developing a suite of applications for your program area, harmonize across the suite_** where that makes sense. This will minimize risk associated with changes to the team and enable other developers to work with your code.
 
-### Web Mapping Frameworks
+Web Mapping Frameworks
+======================
 
 A comparison of web mapping frameworks in use in BC Government can found here: [https://bcgov.github.io/bcwebmaps-options/](https://bcgov.github.io/bcwebmaps-options/)
 
-### Back End Languages
+Back End Languages
+==================
 
 Similar to front end frameworks, we recommend you choose a development language that best suits the team and the business challenge you are working on. _**If you are developing a suite of applications for your program area, harmonize across the suite**_ where that makes sense. This will minimize risk associated with changes to the team and enable other developers to work with your code.
 
 There are many languages in use by agile teams across government, the most popular being Go, Python, Java, Javascript and Typescript. The [Technology Radar](https://apps.nrs.gov.bc.ca/int/confluence/display/AR/Technology+Radar) is a great reference to see where the momentum is around languages and frameworks.
 
-### Web Domains and Certificates
+Web Domains and Certificates
+============================
 
 Information on NRM Web Domains can be found here: [Web-Application domains](https://apps.nrs.gov.bc.ca/int/confluence/display/AR/Web-Application+domains)
 
@@ -185,7 +204,8 @@ Further information on security certificates can be found here: [Security Certif
 
 Information on certbot can be found here: [https://github.com/BCDevOps/certbot](https://github.com/BCDevOps/certbot)
 
-### Common Components
+Common Components
+=================
 
 BC Government has a selection of mature common components and common services.
 
@@ -195,13 +215,15 @@ NRM Specific Guidance: [Common Components and Common Services](https://apps.nrs.
 
 ##### _Community Tip! If you are looking for a common component you think should exist, but doesn't, consider adding some extra design thinking such that other teams can reuse your great work!_
 
-### Reporting and Analytics
+Reporting and Analytics
+=======================
 
 Many teams require reporting and analytics capabilities for their application data. Metabase is an easy-to-use open-source dashboarding and business intelligence tool that has broad usage in the NRM. Architecture has created a packaged install of Metabase tailored to teams wanting secure access to Zone B Oracle databases.
 
 [Metabase](https://github.com/bcgov/nr-metabase)
 
-### I need help from the Community!
+I need help from the Community!
+===============================
 
 There are many teams working across the NRM and beyond. To connect with your NRM colleagues, see the team directory here [NRIDS Development and Digital Services](https://apps.nrs.gov.bc.ca/int/confluence/display/DEVGUILD/NRIDS+Development+and+Digital+Services)
 
@@ -215,7 +237,8 @@ The NRM teams have a DevOps Guild to facilitate connections and collaboration be
 
 You can also reach out to the NRM Architecture team, who can help connect your team with the right resources.
 
-### Key References:
+Key References:
+===============
 
 BC DevHub: [https://developer.gov.bc.ca](https://developer.gov.bc.ca), [https://docs.developer.gov.bc.ca/](https://docs.developer.gov.bc.ca/)
 
@@ -225,7 +248,8 @@ Communities of Practice: [https://digital.gov.bc.ca/communities](https://digital
 
 BC Gov StackOverflow: [https://stackoverflow.developer.gov.bc.ca/](https://stackoverflow.developer.gov.bc.ca/)
 
-### FAQ
+FAQ
+===
 
 **Q.** Do I need my application and data architecture to be formally approved?
 
