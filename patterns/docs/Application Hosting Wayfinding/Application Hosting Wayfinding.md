@@ -1,12 +1,7 @@
 ---
 sidebar_position: 5
 ---
-<table class="wrapped"><colgroup></colgroup><tbody><tr><th>Status</th><td><div class="content-wrapper"><p>YellowEvolving</p></div></td></tr><tr><th>Description</th><td><div class="content-wrapper"><p>Overview of application hosting options</p></div></td></tr><tr><th>Owner</th><td>NRIDS Architecture</td></tr></tbody></table>
-
-Overview
-========
-
-This page is intended to provide a high level overview of running an application in various environments and provide a basic understanding of the differences between application hosting environments. Please ask a member of our team to review this with you if you are discussing hosting options.
+<table class="wrapped relative-table"><colgroup></colgroup><tbody><tr><th>Status</th><td><div class="content-wrapper"><p>GreenPublished</p></div></td></tr><tr><th>Overview</th><td><div class="content-wrapper"><p>This page is intended to provide a high level overview of running an application in various environments and provide a basic understanding of the differences between application hosting environments. Please ask a member of our team to review this with you if you are discussing hosting options.</p></div></td></tr></tbody></table>
 
 Hosting Options
 ===============

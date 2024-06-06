@@ -1,17 +1,19 @@
 ---
 sidebar_position: 2
 ---
-<table class="wrapped"><colgroup class=""></colgroup><tbody class=""><tr class=""><th>Status</th><td><div class="content-wrapper"><p>Document</p></div></td></tr><tr class=""><th>Stakeholders</th><td>NRIDS Architecture</td></tr><tr class=""><th>Description</th><td>General guidance and recommendations for source code repositories</td></tr><tr class=""><th>Owner</th><td>NRIDS (Architecture)</td></tr></tbody></table>
+<table class="wrapped"><colgroup></colgroup><tbody><tr><th>Status</th><td><div class="content-wrapper"><p>GreenPublished</p></div></td></tr><tr><th>Overview</th><td><div class="content-wrapper"><p>This page is general awareness, guidance, and recommendations for source code repositories within the NRM</p></div></td></tr></tbody></table>
 
-### Source Code Repository Types
+Repository Type Overview
+========================
 
-<table class="wrapped"><colgroup class=""></colgroup><tbody class=""><tr class=""><th><p>Repository Type</p></th><th><p>When to Use</p></th><th><p>Key Contacts</p></th><th><p>Notes</p></th></tr><tr class=""><td>Subversion</td><td>Never</td><td></td><td>Subversion is deprecated, do not create any new repositories.</td></tr><tr class=""><td>BitBucket</td><td>Closed, internal</td><td></td><td>Manual, complex, (currently) in-house. Works with RFC/RFD process and JIRA. Very customizable.</td></tr><tr class=""><td>Github</td><td>Whenever possible</td><td></td><td><p>Ideal for automation, open source. Industry leader in most significant areas. Very unconstrained.</p><p>see <a href="https://github.com/bcgov/BC-Policy-Framework-For-GitHub">https://github.com/bcgov/BC-Policy-Framework-For-GitHub</a></p></td></tr></tbody></table>
+<table class="wrapped"><colgroup class=""></colgroup><tbody class=""><tr class=""><th><p>Repository Type</p></th><th><p>When to Use</p></th><th><p>Notes</p></th></tr><tr class=""><td>Subversion</td><td>Never</td><td>Subversion is deprecated, do not create any new repositories.</td></tr><tr class=""><td>BitBucket</td><td>Closed, internal</td><td>Manual, complex, (currently) in-house. Works with RFC/RFD process and JIRA. Very customizable.</td></tr><tr class=""><td>Github</td><td>Whenever possible</td><td><p>Ideal for automation, open source. Industry leader in most significant areas. Very unconstrained.</p><p>see <a href="https://github.com/bcgov/BC-Policy-Framework-For-GitHub">https://github.com/bcgov/BC-Policy-Framework-For-GitHub</a></p></td></tr></tbody></table>
 
-**GitHub**:
+GitHub:
+-------
 
 Beginner Guide: [https://github.blog/2024-05-27-what-is-git-our-beginners-guide-to-version-control/](https://github.blog/2024-05-27-what-is-git-our-beginners-guide-to-version-control/)
 
-*   Predominant SCM system used in BC Government
+*   Predominant Source Code Management(SCM) system used in BC Government
 *   Free code repositories for open source projects
 *   Free GitHub Actions for open source projects
 *   Marketplace provides an incredible amount of[technologies and services](https://github.com/marketplace)
@@ -32,39 +34,45 @@ Beginner Guide: [https://github.blog/2024-05-27-what-is-git-our-beginners-guide-
 
 For practices on using GitHub see:
 
-**BitBucket**:
+BitBucket:
+----------
 
 *   JIRA integration
-*   Connections are stronger between teams and interal processes, e.g. RFC/RFD
+*   Connections are stronger between teams and interal processes, e.g. [RFC/RFD](https://apps.nrs.gov.bc.ca/int/confluence/display/TS/RFC+Process) RFC/RFD
 *   Fine-grained control, e.g.:
     *   Prevent even repo administrators from merging code or side-stepping requirements
     *   Asphyxiate contractors with red tape until code is abandoned and/or overwritten
 *   Currently on-premise, working Jenkins and minimal firewall/networking changes
 *   Potential shift to cloud will require similar admin and network changes to GitHub
 
-**Subversion (SVN)**:
+Subversion (SVN):
+-----------------
 
 *   Lessened need to retrain on legacy projects, some are comfortable/familiar
 
-### Source Code Repository Naming
+Source Code Repository Naming
+=============================
 
 *   Github: prefix each repository with "nr-"
     *   e.g. nr-(app-name), replace the (app-name) with actual application/product name.
     *   e.g. nr-fom-api
 
-### Diagrams
+Diagrams
+========
 
 *   All repositories should have a .diagrams folder in the root of the repo. This folder should have at least:
     *   1x application architecture diagram in the source file format .drawio.xml
     *   1x system integration and data flow diagram in the source file format .drawio.xml
     *   1x architecture diagram in the file format .png for each .drawio.xml diagram
 
-### Source Code Repository Topics
+Source Code Repository Topics
+=============================
 
 *   Topics are labels that create subject-based connections between GitHub repositories and let you explore projects by type, technology, and more
 *   putting nrs as a topic in the repos.
 
-### Mono Repo vs Multi Repo?
+Mono Repo vs Multi Repo?
+========================
 
 *   TL;DR - mono initially, multi with growth (e.g. +services, micro-service, APIs)
 *   In a mono repo approach, all services and codebase are kept in a single repository
@@ -80,4 +88,5 @@ For practices on using GitHub see:
 *   Complex projects and supporting architecture (pipelines, APIs, DBs) are easier to manage with multi repo
 *   Implementation (mono, multi, APIs, auth) matters far more than how the repositories are arranged
 
-### Source Code Repository License & Ownership
+Source Code Repository License & Ownership
+==========================================
