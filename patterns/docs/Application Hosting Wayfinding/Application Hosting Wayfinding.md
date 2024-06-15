@@ -57,7 +57,7 @@ AWS
 
 **Overview**: Running an application in BCGOV AWS tenancy owned by OCIO
 
-Please not the below is not a representation about a specific application but a representation of what could be.
+Please note the below is not a representation about a specific application but a representation of what could be.
 
 trueAWSfalse600autotoptrue34981
 
