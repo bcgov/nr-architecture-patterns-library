@@ -91,7 +91,8 @@ GitHub PRs - Commits
 PR Review and Practices
 =======================
 
-*   PR titles should follow a pattern (eg. "#Ticket Number - Nice Description (#)")
+*   PR titles should follow a pattern (eg. "fix/feat: #Ticket Number - Nice Description (#)")
+*   Branches should also follow a similar pattern (eg. feat/<featurename>
 *   A single PR should be for a single Feature/bug/hotfix/patch/etc and kept as small as possible and reasonable
 *   Add appropriate labels established by your team. (eg. Adding labels to also indicate the applications being impacted by the PR, for instance, "web" or "API")
 *   Connect the issue using the button "Connect Issue", if not available install the Chrome Extension[ZenHub for GitHub](https://chrome.google.com/webstore/detail/zenhub-for-github/ogcgkffhplmphkaahpmffcafajaocjbd)or similar (this will help trace a completed task to the code modified)

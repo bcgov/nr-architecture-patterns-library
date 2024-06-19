@@ -57,6 +57,18 @@ Source Code Repository Naming
     *   e.g. nr-(app-name), replace the (app-name) with actual application/product name.
     *   e.g. nr-fom-api
 
+Folder Naming
+=============
+
+*   "frontend" folder for frontend
+    *   for multiple frontends use "frontend-\*"
+        *   Example: frontend-admin
+*   "backend" folder for backend
+    *   for multiple backends use "backend-\*"
+        *   Example: backend-doc-gen
+*   "migrations" folder for applications using flyway
+*   "tests" folder for applications with non-component specific tests (eg. Load). Component specific tests (unit, integration, e2e) should be within their specific subfolder (backend, frontend)
+
 Diagrams
 ========
 
@@ -73,6 +85,8 @@ Source Code Repository Topics
 
 Mono Repo vs Multi Repo?
 ========================
+
+As a general recommendation, it is preferred to use product based monorepos.
 
 *   TL;DR - mono initially, multi with growth (e.g. +services, micro-service, APIs)
 *   In a mono repo approach, all services and codebase are kept in a single repository
