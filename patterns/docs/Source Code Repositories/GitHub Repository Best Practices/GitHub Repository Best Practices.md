@@ -49,6 +49,12 @@ Manage Your Team
 *   Create a Team in GitHub and Manage the permission in the team. ([https://github.com/orgs/bcgov/teams](https://github.com/orgs/bcgov/teams))
 *   This way if the single team is working on multiple products, authorization will be easier to manage and tracking will be easier.
 
+Manage Your Code Owners 
+========================
+
+*   Add a CODEOWNERS file under the /.github directory
+*   Add this rule to your main branch protection to ensure PRs are reviewed by code owner 
+
 Setup Your Pull Request Repository Settings (Very Useful to Help Ensure Guidelines are Followed)
 ================================================================================================
 
