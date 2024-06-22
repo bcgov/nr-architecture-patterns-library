@@ -91,7 +91,7 @@ GitHub PRs - Commits
 PR Review and Practices
 =======================
 
-*   PR titles should follow a pattern (eg. "fix/feat: #Ticket Number - Nice Description (#)")
+*   PR titles should follow conventional commit.
 *   Branches should also follow a similar pattern (eg. feat/$featurename)
 *   A single PR should be for a single Feature/bug/hotfix/patch/etc and kept as small as possible and reasonable
 *   Add appropriate labels established by your team. (eg. Adding labels to also indicate the applications being impacted by the PR, for instance, "web" or "API")
