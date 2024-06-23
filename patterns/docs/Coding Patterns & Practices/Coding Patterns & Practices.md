@@ -91,7 +91,7 @@ GitHub PRs - Commits
 PR Review and Practices
 =======================
 
-*   PR titles should follow conventional commit.
+*   PR titles should follow conventional commit (eg. [https://www.conventionalcommits.org/en/v1.0.0/](https://www.conventionalcommits.org/en/v1.0.0/)).
 *   Branches should also follow a similar pattern (eg. feat/$featurename)
 *   A single PR should be for a single Feature/bug/hotfix/patch/etc and kept as small as possible and reasonable
 *   Add appropriate labels established by your team. (eg. Adding labels to also indicate the applications being impacted by the PR, for instance, "web" or "API")
