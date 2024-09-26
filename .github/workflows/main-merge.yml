@@ -7,7 +7,7 @@ on:
 jobs:
     build-deploy:
       name: Build and Deploy Docusaurus to GitHub Pages
-      runs-on: ubuntu-22.04
+      runs-on: ubuntu-24.04
       defaults:
         run:
           working-directory: ./patterns
