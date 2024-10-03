@@ -3,8 +3,8 @@ sidebar_position: 1
 ---
 <table class="wrapped relative-table"><colgroup></colgroup><tbody><tr><th>Status</th><td><div class="content-wrapper"><p><ac:structured-macro ac:name="status" ac:schema-version="1" ac:macro-id="a2e29e0a-14d5-42cd-922b-bfb7364904e6"><ac:parameter ac:name="colour">Green</ac:parameter><ac:parameter ac:name="title">Published</ac:parameter></ac:structured-macro>&nbsp;</p></div></td></tr><tr><th>Overview</th><td><div class="content-wrapper"><p>The purpose of this page is to outline practices when using GitHub as your source code repository</p></div></td></tr></tbody></table>
 
-Removing Sensitive Data from a GitHub Repo
-==========================================
+Removing Sensitive Data from a GitHub Repo, How To#
+===================================================
 
 **[https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository)**
 
