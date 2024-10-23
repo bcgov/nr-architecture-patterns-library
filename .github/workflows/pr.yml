@@ -1,44 +1,55 @@
-name: PR
+name: Deploy PR to Github Pages
+
 on:
   pull_request:
+    branches:
+      - main
     types:
       - opened
       - reopened
       - synchronize
       - closed
-    branches:
-      - main
   workflow_dispatch:
-concurrency: preview-${{ github.ref }}
-permissions:
-  contents: write
-  pull-requests: write
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
 jobs:
-  build-and-deploy:
+  build-deploy:
+    name: Build and Deploy to GitHub Pages
     runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    permissions:
+      contents: write
+      pull-requests: write
     defaults:
       run:
         working-directory: ./patterns
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+        with:
+          fetch-depth: 0
+      - name: Use Node
+        uses: actions/setup-node@v4
         if: github.event.action != 'closed'
         with:
           node-version: 20
           cache: npm
           cache-dependency-path: patterns/package-lock.json
-      
       - name: Install dependencies
         if: github.event.action != 'closed'
-        run:  npm ci --ignore-scripts
-      - name: Install Dependencies and Build For PR🔧
+        run: npm ci --ignore-scripts
+      - name: Build website
         if: github.event.action != 'closed'
         env:
-          BASE_URL: /nr-architecture-patterns-library/pr-preview/pr-${{github.event.number}}
-        run: |
-          npm run build
-      - name: Deploy preview
+          BASE_URL: /nr-architecture-patterns-library/pr-preview/pr-${{ github.event.pull_request.number }}
+        run: npm run build
+      - name: Deploy to/Cleanup GitHub Pages
         uses: rossjrw/pr-preview-action@v1
         with:
           source-dir: ./patterns/build
+          preview-branch: gh-pages
+          umbrella-dir: pr-preview
+          action: auto
