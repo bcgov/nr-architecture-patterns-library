@@ -66,6 +66,8 @@ Repositories and Branching
 
    - Establish a branching strategy (e.g., Gitflow) for a structured development process.
 
+   - The authority to create BCGOV-C repos will remain with OCIO.
+
 Issue Tracking
 
    - Utilize GitHub Issues for tracking tasks, bugs, and enhancements.
