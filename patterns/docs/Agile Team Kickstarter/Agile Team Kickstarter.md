@@ -19,6 +19,23 @@ Before starting development, or when new team members begin contributing, ensure
 
 [Coding Patterns and Practices](https://apps.nrs.gov.bc.ca/int/confluence/display/AR/Coding+Patterns+and+Practices)
 
+Data Guides, Standards and Resources
+====================================
+
+Data is the enduring asset as part of any digital service in Government. Below are some recommended resources to get teams familiar with the data ecosystem within BC Government:
+
+[Open Data Policy](https://www2.gov.bc.ca/gov/content/data/policy-standards/open-data) increases government transparency and accountability through the public release of information, including data.
+
+[BC Data Catalogue](https://catalogue.data.gov.bc.ca/) is a resource for discovering thousands of datasets from across Government, and in some cases gaining access to the services themselves.
+
+[Core Metadata Standard](https://www2.gov.bc.ca/gov/content/data/policy-standards/core-metadata-standard) defines the metadata elements that help make digital information easier to find, to improve services, and increase government's efficiency
+
+[Gender and Sex Data Standard](https://www2.gov.bc.ca/gov/content/data/policy-standards/gender-sex-data-standard) improves how government collects and uses data to serve B.C.'s diverse population.
+
+[Indigenous Languages Technology Standard](https://www2.gov.bc.ca/gov/content/data/policy-standards/ilts)**:** the BC Government is committed to including [Indigenous languages in government records, systems and services](https://www2.gov.bc.ca/gov/content?id=666A1FD778FA437994E419A98662ED5C). The [BC Sans](https://www2.gov.bc.ca/gov/content/governments/services-for-government/policies-procedures/bc-visual-identity/bc-sans) font is an open-source "living" typeface developed for government to improve the readability and delivery of digital services. It was designed to support special characters and syllabics found in Indigenous Languages in B.C. When designing and building your product, ensure it has the ability to collect, store, manage and display BC Sans characters. Connect with your architects for more details and references.
+
+[Working with Data](https://developer.gov.bc.ca/docs/default/component/bc-developer-guide/working-with-data/) is a developer focused guide around developing data solutions within BC Government.
+
 Product Lifecycle
 =================
 
@@ -149,8 +166,6 @@ Some points of consideration are:
 For NRM guidance specific to data and database design, please visit this space: [NRM Data and Database Development Guidelines](https://apps.nrs.gov.bc.ca/int/confluence/display/NRMDDDG/NRM+Data+and+Database+Development+Guidelines)
 
 Database backups can be setup using the backup container image; information can be found here: [https://developer.gov.bc.ca/Backup-Container](https://developer.gov.bc.ca/Backup-Container)
-
-**Indigenous Languages:** the BC Government is committed to including [Indigenous languages in government records, systems and services](https://www2.gov.bc.ca/gov/content?id=666A1FD778FA437994E419A98662ED5C). The [BC Sans](https://www2.gov.bc.ca/gov/content/governments/services-for-government/policies-procedures/bc-visual-identity/bc-sans) font is an open-source "living" typeface developed for government to improve the readability and delivery of digital services. It was designed to support special characters and syllabics found in Indigenous Languages in B.C. When designing and building your product, ensure it has the ability to collect, store, manage and display BC Sans characters. Connect with your architects for more details and references.
 
 Document Storage
 ================
