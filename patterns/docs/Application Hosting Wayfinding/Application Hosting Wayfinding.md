@@ -8,7 +8,13 @@ Hosting Options
 
 The below options outline the 4 primary ways to host applications.
 
-Note: Azure and Google are not mentioned below as the Province has not completed agreements with these providers, hence they are currently not recommended for use.
+**Note: Google (GCP) is not mentioned below as it is not recommended for use.**
+
+*   GCP has centralized cost recovery and billing.
+*   GCP has no landing zone to ensure applications are developed using minimum best practices (this is not on the roadmap yet). It will be up to teams and the ministry to accept the risk and ensure their applications are following best practices.
+*   GCP has no overarching PIA/STRA so it will up to the team to include platform specifics within their PIA/STRA
+    *   Applications that are not open/public data, will need to include platform specifics to allow the use of protected A or B data.
+*   GCP will NOT be part of the Equinix fabric, allowing private routing to ZoneB. However, you can still go over the public internet (eg. API), though be aware some services are not accessible this way.
 
 On-Premise
 ----------
@@ -52,8 +58,8 @@ Please note the below is not a representation about a specific application but a
 
 **Note: For direct DB access to ZoneB databases Or Storing Protected C data, emerald cluster may be required**
 
-AWS
----
+AWS & Azure
+-----------
 
 **Overview**: Running an application in BCGOV AWS tenancy owned by OCIO
 
