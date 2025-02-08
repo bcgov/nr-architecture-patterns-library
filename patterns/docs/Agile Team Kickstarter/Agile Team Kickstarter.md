@@ -10,7 +10,7 @@ Partnership Agreement
 
 NRM teams that work within our Development and Digital Services (DDS) branch start with a partnership agreement to ensure alignment between NRIDS and the program area.
 
-[NRM Digital Service Delivery Partnership Agreement](https://apps.nrs.gov.bc.ca/int/confluence/display/DEVGUILD/NRM+Digital+Service+Delivery+Partnership+Agreement)
+[NRM Digital Service Delivery Partnership Agreement](https://apps.nrs.gov.bc.ca/int/confluence/display/DDS/Partnership+agreement+for+digital+service+delivery)
 
 Team Agreement
 ==============
