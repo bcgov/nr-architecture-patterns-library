@@ -5,7 +5,7 @@ This page has been replicated to a publicly accessible website located [here](ht
 
 <table class="wrapped"><colgroup></colgroup><tbody><tr><th>Status</th><td><div class="content-wrapper"><p>GreenPublished</p></div></td></tr><tr><th>Overview</th><td><p>The purpose of this page is to outline some of the key information and connections that product teams should be made aware of as part of team inception. This is a living and collaborative document.</p><p>Teams can use this page a reference point to assist in locating some key areas of information related to their application. If the information you are using does not exist here please review other guideline pages and/or contact the architecture team.</p></td></tr></tbody></table>
 
-Partnership Agreement
+Partnership Agreement - TEST
 =====================
 
 NRM teams that work within our Development and Digital Services (DDS) branch start with a partnership agreement to ensure alignment between NRIDS and the program area.
