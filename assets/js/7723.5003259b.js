@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunknr_architecture_patterns_library=self.webpackChunknr_architecture_patterns_library||[]).push([[7723],{7723:(e,r,t)=>{t.d(r,{createPieServices:()=>a.f});var a=t(8685);t(9369)}}]);
