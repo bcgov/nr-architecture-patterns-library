@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunknr_architecture_patterns_library=self.webpackChunknr_architecture_patterns_library||[]).push([[2589],{2589:(r,e,t)=>{t.r(e)}}]);
