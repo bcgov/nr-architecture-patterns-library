@@ -48,11 +48,11 @@ Manage Your Team
 
 *   Create a Team in GitHub and Manage the permission in the team. ([https://github.com/orgs/bcgov/teams](https://github.com/orgs/bcgov/teams))
 *   This way if the single team is working on multiple products, authorization will be easier to manage and tracking will be easier.
-*   All team names shall be prefixed by nr-
-*   Team names shall be suffixed by `-devops`  if it is designed to be administrative in nature. This should only contain Product Owners/Mangers, and Technical Leads
-*   All team names shall be lowercase, and use `dashes`  for `spacing`  (do not use spaces or underscores, or other non-ASCII characters)
+*   All team names shall be prefixed by `nr-` .
+*   Team names shall be suffixed by `-devops`  if it is designed to be administrative in nature. This should only contain Product Owners/Mangers, Devops Specialists and Technical Leads . 
+*   All team names shall be lowercase, and use `dashes`  for `spacing`  (_do not use spaces or underscores, or other non-ASCII characters_)
 *   Team name descriptors should attempt to preserve hierarchical team specificity where relevant.
-*   GitHub teams does not have to be nested into other existing GitHub teams; they should depend on naming convention and be "top level".
+*   GitHub teams does not have to be nested into other existing GitHub teams; they should depend on naming convention and be `top level` .
 *   Team name acronyms should match formal team names where possible.
 
 Manage Your Code Owners 
