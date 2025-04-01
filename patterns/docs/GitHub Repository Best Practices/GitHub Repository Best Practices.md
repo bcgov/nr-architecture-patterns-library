@@ -13,6 +13,8 @@ Please make sure to follow those instructions carefully, as simply deleting the 
 Repository Setup
 ================
 
+> It is recommended to have product-based monorepos
+
 The below options are found under settings
 
 Branch Protection
