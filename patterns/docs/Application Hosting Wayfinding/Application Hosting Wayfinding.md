@@ -3,18 +3,8 @@ sidebar_position: 5
 ---
 <table class="wrapped relative-table"><colgroup></colgroup><tbody><tr><th>Status</th><td><div class="content-wrapper"><p>GreenPublished</p></div></td></tr><tr><th>Overview</th><td><div class="content-wrapper"><p>This page is intended to provide a high level overview of running an application in various environments and provide a basic understanding of the differences between application hosting environments. Please ask a member of our team to review this with you if you are discussing hosting options.</p></div></td></tr></tbody></table>
 
-Hosting Options
-===============
-
-The below options outline the 4 primary ways to host applications.
-
-**Note: Google (GCP) is not mentioned below as it is not recommended for use.**
-
-*   GCP has centralized cost recovery and billing.
-*   GCP has no landing zone to ensure applications are developed using minimum best practices (this is not on the roadmap yet). It will be up to teams and the ministry to accept the risk and ensure their applications are following best practices.
-*   GCP has no overarching PIA/STRA so it will up to the team to include platform specifics within their PIA/STRA
-    *   Applications that are not open/public data, will need to include platform specifics to allow the use of protected A or B data.
-*   GCP will NOT be part of the Equinix fabric, allowing private routing to ZoneB. However, you can still go over the public internet (eg. API), though be aware some services are not accessible this way.
+Approved Hosting Options
+========================
 
 On-Premise
 ----------
@@ -101,3 +91,24 @@ trueSaaSfalse400autotoptrue26291
 **When this might not fit?**
 
 1.  Many integration points with government systems that are not externally accessible.
+
+Not Approved Hosting Options
+============================
+
+GCP
+---
+
+**Note: Google (GCP) is not mentioned as it is not recommended for use.**
+
+*   GCP has centralized cost recovery and billing.
+*   GCP has no landing zone to ensure applications are developed using minimum best practices (this is not on the roadmap yet). It will be up to teams and the ministry to accept the risk and ensure their applications are following best practices.
+*   GCP has no overarching PIA/STRA so it will up to the team to include platform specifics within their PIA/STRA
+    *   Applications that are not open/public data, will need to include platform specifics to allow the use of protected A or B data.
+*   GCP will NOT be part of the Equinix fabric, allowing private routing to ZoneB. However, you can still go over the public internet (eg. API), though be aware some services are not accessible this way.
+
+Oracle Cloud
+------------
+
+At this point oracle cloud is not approved for use in the NRM.
+
+*   Please reach out to architecture if you have a valid use case you wish to explore
