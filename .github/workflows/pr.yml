@@ -28,11 +28,11 @@ jobs:
         working-directory: ./patterns
     steps:
       - name: Checkout 🛎️
-        uses: actions/checkout@v4
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
         with:
           fetch-depth: 0
       - name: Use Node
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
         if: github.event.action != 'closed'
         with:
           node-version: 20
@@ -47,7 +47,7 @@ jobs:
           BASE_URL: /nr-architecture-patterns-library/pr-preview/pr-${{ github.event.pull_request.number }}
         run: npm run build
       - name: Deploy to/Cleanup GitHub Pages
-        uses: rossjrw/pr-preview-action@v1
+        uses: rossjrw/pr-preview-action@2fb559e4766555e23d07b73d313fe97c4f8c3cfe # v1
         with:
           source-dir: ./patterns/build
           preview-branch: gh-pages
