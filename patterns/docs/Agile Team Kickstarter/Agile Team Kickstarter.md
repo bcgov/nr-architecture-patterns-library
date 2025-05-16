@@ -19,6 +19,11 @@ Before starting development, or when new team members begin contributing, ensure
 
 [Coding Patterns and Practices](https://apps.nrs.gov.bc.ca/int/confluence/display/AR/Coding+Patterns+and+Practices)
 
+Development Standards
+=====================
+
+Familiarize yourself with the. These are requirements of all NRM applications.
+
 Data Guides, Standards and Resources
 ====================================
 
