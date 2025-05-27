@@ -3,6 +3,15 @@ sidebar_position: 2
 ---
 <table class="wrapped"><colgroup></colgroup><tbody><tr><th>Status</th><td><div class="content-wrapper"><p>GreenPublished</p></div></td></tr><tr><th>Overview</th><td><div class="content-wrapper"><p>This page is general awareness, guidance, and recommendations for source code repositories within the NRM</p></div></td></tr></tbody></table>
 
+Summary
+=======
+
+Source code should be stored in a GitHub repository in the "bcgov" organization.
+
+Private repositories can be requested in the bcgov-c organization
+
+NRM specific guidance on Github is here: [Source Code Repositories](https://apps.nrs.gov.bc.ca/int/confluence/display/AR/Source+Code+Repositories)
+
 Repository Type Overview
 ========================
 
