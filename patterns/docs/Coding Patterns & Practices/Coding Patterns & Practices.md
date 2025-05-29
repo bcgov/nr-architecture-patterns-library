@@ -6,7 +6,9 @@ sidebar_position: 4
 Languages Supported
 ===================
 
-Currently, most agile teams use one of these 4 languages and it is encouraged to stay within these languages, it may expand in the future. ( Typescript/JavaScript, Java On Native, Python, Go)
+Currently, These 4 languages are the supported languages for use within the NRM. (Typescript/JavaScript, Java On Native, Python, R)
+
+**Note regarding R:** R can be a great fit for certain use cases such as statistical analysis, data visualization, data manipulation, and building Shiny apps. R is widely used in academic research and projects that focus on statistical modeling. However, R has limitations when scaling for application development, specifically for use cases when importing additional libraries is required. For application development (outside of shiny) and other use cases we recommend using one of the other support languages. As well Python can generally be a good alternative for those familiar with R.
 
 Native Deployments
 ==================
