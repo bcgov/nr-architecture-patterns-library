@@ -65,6 +65,7 @@ Source Code Repository Naming
 *   Github: prefix each repository with "nr-"
     *   e.g. nr-(app-name), replace the (app-name) with actual application/product name.
     *   e.g. nr-fom-api
+*   Make sure the repository name is all lowercase and separated by dashes(-)
 
 Folder Naming
 =============
