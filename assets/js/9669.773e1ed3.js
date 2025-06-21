@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunknr_architecture_patterns_library=self.webpackChunknr_architecture_patterns_library||[]).push([[9669],{9669:(r,e,t)=>{t.d(e,{createGitGraphServices:()=>a.b});var a=t(7123);t(3579)}}]);
