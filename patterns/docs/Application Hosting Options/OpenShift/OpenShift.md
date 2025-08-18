@@ -1,7 +1,7 @@
 ---
 sidebar_position: 1
 ---
-<table class="wrapped relative-table"><colgroup></colgroup><tbody><tr><th>Status</th><td><div class="content-wrapper"><p><ac:structured-macro ac:name="status" ac:schema-version="1" ac:macro-id="77ac0dad-430b-4a51-a1bb-9c520a157a98"><ac:parameter ac:name="colour">Yellow</ac:parameter><ac:parameter ac:name="title">Draft</ac:parameter></ac:structured-macro>&nbsp;</p></div></td></tr><tr><th>Overview</th><td><div class="content-wrapper"><p>This page is intended to provide a recommendation when developing custom applications on OpenShift</p></div></td></tr></tbody></table>
+<table class="wrapped relative-table"><colgroup></colgroup><tbody><tr><th>Status</th><td><div class="content-wrapper"><p><ac:structured-macro ac:name="status" ac:schema-version="1" ac:macro-id="a2e29e0a-14d5-42cd-922b-bfb7364904e6"><ac:parameter ac:name="colour">Green</ac:parameter><ac:parameter ac:name="title">Published</ac:parameter></ac:structured-macro>&nbsp;</p></div></td></tr><tr><th>Overview</th><td><div class="content-wrapper"><p>This page is intended to provide a recommendation when developing custom applications on OpenShift</p></div></td></tr></tbody></table>
 
 Hosting Options
 ===============
