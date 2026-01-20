@@ -47,7 +47,7 @@ jobs:
           BASE_URL: /nr-architecture-patterns-library/pr-preview/pr-${{ github.event.pull_request.number }}
         run: npm run build
       - name: Deploy to/Cleanup GitHub Pages
-        uses: rossjrw/pr-preview-action@5fd5f8e2f88e735fc3d1151302b32242037e3962 # v1
+        uses: rossjrw/pr-preview-action@ffa7509e91a3ec8dfc2e5536c4d5c1acdf7a6de9 # v1
         with:
           source-dir: ./patterns/build
           preview-branch: gh-pages
