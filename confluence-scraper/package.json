@@ -23,7 +23,7 @@
     "homepage": "https://github.com/bcgov/nr-arch-templates#readme",
     "dependencies": {
         "@actions/core": "^2.0.0",
-        "axios": "1.13.3",
+        "axios": "1.13.4",
         "cheerio": "^1.0.0-rc.12",
         "htmltidy2": "^1.1.1",
         "turndown": "^7.1.2",
