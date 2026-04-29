@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunknr_architecture_patterns_library=globalThis.webpackChunknr_architecture_patterns_library||[]).push([[4736],{4736(r,a,e){e.d(a,{createRadarServices:()=>t.f});var t=e(6299);e(6902)}}]);
